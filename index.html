@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>indeles.nl</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#000;
+  --bg:#fff;
+
+  --mint:#B7D6D3;
+  --yellow:#F1D38B;
+
+  --bar-h:78px;
+  --maxw:900px;
+
+  --r:18px;
+  --shadow:8px 8px 0 #000;
+  --shadow-s:5px 5px 0 #000;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{height:100%;}
+body{
+  font-family:'Courier Prime', monospace;
+  background:var(--bg);
+  color:var(--ink);
+}
+
+/* ===== TOPBAR ===== */
+.topbar{
+  position:sticky;
+  top:0;
+  height:var(--bar-h);
+  background:#000;
+}
+.tb-inner{
+  max-width:var(--maxw);
+  margin:0 auto;
+  height:100%;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:0 16px;
+  color:#fff;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand-icon{
+  width:46px;
+  height:46px;
+}
+.brand-icon svg{width:100%;height:100%;}
+.brand span{
+  font-weight:700;
+  letter-spacing:.08em;
+}
+
+/* ===== PAGE ===== */
+main{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:40px 16px;
+  display:flex;
+  justify-content:center;
+}
+
+/* ===== CARD ===== */
+.card{
+  width:100%;
+  max-width:520px;
+  background:var(--mint);
+  border:2px solid #000;
+  border-radius:var(--r);
+  box-shadow:var(--shadow);
+  padding:24px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  min-height:360px;
+}
+
+.tool{
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:.06em;
+}
+
+/* tekstblok */
+.desc{
+  background:rgba(255,255,255,.65);
+  border:2px solid #000;
+  border-radius:16px;
+  box-shadow:var(--shadow-s);
+  padding:18px;
+  font-weight:700;
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* actie */
+.actions{
+  margin-top:auto;
+  display:flex;
+  justify-content:center;
+}
+
+.btn{
+  background:var(--yellow);
+  border:2px solid #000;
+  border-radius:18px;
+  box-shadow:var(--shadow-s);
+  padding:16px 28px;
+  font-weight:700;
+  font-size:18px;
+  color:#000;
+}
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="tb-inner">
+    <div class="brand">
+      <div class="brand-icon" aria-hidden="true">
+        <!-- INDELES logo -->
+        <svg viewBox="0 0 300 300">
+          <rect x="10" y="10" width="90" height="90" rx="18" fill="#B7D6D3" stroke="#000" stroke-width="10"/>
+          <rect x="105" y="10" width="90" height="90" rx="18" fill="#E2A29A" stroke="#000" stroke-width="10"/>
+          <rect x="200" y="10" width="90" height="90" rx="18" fill="#F1D38B" stroke="#000" stroke-width="10"/>
+          <rect x="10" y="105" width="90" height="90" rx="18" fill="#E2A29A" stroke="#000" stroke-width="10"/>
+          <rect x="105" y="105" width="90" height="90" rx="18" fill="#F1D38B" stroke="#000" stroke-width="10"/>
+          <rect x="200" y="105" width="90" height="90" rx="18" fill="#B7D6D3" stroke="#000" stroke-width="10"/>
+          <rect x="10" y="200" width="90" height="90" rx="18" fill="#F1D38B" stroke="#000" stroke-width="10"/>
+          <rect x="105" y="200" width="90" height="90" rx="18" fill="#B7D6D3" stroke="#000" stroke-width="10"/>
+          <rect x="200" y="200" width="90" height="90" rx="18" fill="#E2A29A" stroke="#000" stroke-width="10"/>
+        </svg>
+      </div>
+      <span>indeles.nl</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <div class="tool">indeles.nl</div>
+
+    <div class="desc">
+      <strong>indeles.nl</strong> is een verzameling snelle, slimme tools
+      voor een activerende les!
+    </div>
+
+    <div class="actions">
+      <div class="btn">Binnenkort online</div>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
